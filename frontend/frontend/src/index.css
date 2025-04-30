@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-[#0f172a] text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#2f855a] hover:bg-[#48bb78] text-white px-6 py-2 rounded-lg transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply px-4 py-2 rounded-lg bg-green-600 text-white hover:bg-green-500 transition-colors;
+  }
+  
+  .card {
+    @apply bg-[#1a365d] p-6 rounded-lg shadow-lg;
+  }
+  
+  .input-field {
+    @apply appearance-none rounded-lg relative block w-full px-3 py-2 border border-gray-600 bg-[#0f172a] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#48bb78] focus:border-transparent;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a365d;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4f46e5;
+  border-radius: 5px;
+  border: 2px solid #1a365d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6366f1;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4f46e5 #1a365d;
+}
+
+/* Dashboard Scrollbar Variation */
+.dashboard-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dashboard-scrollbar::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+.dashboard-scrollbar::-webkit-scrollbar-thumb {
+  background: #7c3aed;
+  border: 2px solid #0f172a;
+}
+
+.dashboard-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #8b5cf6;
+}
+
+/* For Firefox Dashboard Scrollbar */
+.dashboard-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #7c3aed #0f172a;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

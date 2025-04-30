@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 180L40 160L80 170L120 140L160 150L200 120L240 100L280 90L320 70L360 50L400 40" stroke="url(#gradient)" stroke-width="3" fill="none"/>
+  <path d="M0 180L40 160L80 170L120 140L160 150L200 120L240 100L280 90L320 70L360 50L400 40" stroke-opacity="0.1" stroke="url(#gradient)" stroke-width="12" fill="none"/>
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="400" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+</svg> 

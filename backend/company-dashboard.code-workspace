@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "fsd-frontend-1",
+			"path": "../fsd-frontend-1"
+		}
+	],
+	"settings": {}
+}
