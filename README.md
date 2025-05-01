@@ -69,14 +69,16 @@ To streamline the internship process for students, faculty, and administrators b
 
 ### ⚙️ Local Setup
 # Step 1: Clone the repository
-git clone https://github.com/YourUsername/fsd-internify.git
+git clone https://github.com/michellealoz/fsd-internify.git
 cd fsd-internify
+
 
 # Step 2: Setup Backend
 cd backend
 npm install
-# Create a .env file and add Mongo URI + JWT_SECRET
+# Make sure you have a .env file with MONGO_URI and JWT_SECRET
 npm run dev
+
 
 # Open a new PowerShell tab or split terminal for frontend
 
@@ -84,3 +86,4 @@ npm run dev
 cd ../frontend
 npm install
 npm run dev
+
