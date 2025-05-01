@@ -2,7 +2,15 @@
     const router = express.Router();
     const Application = require("../models/application");
     const { verifyToken } = require("../middlewares/authMiddleware");
-
+    const { protect } = require('../middleware/auth');
+    const { checkRole } = require('../middleware/roleCheck');
+    const {
+      applyForInternship,
+      getMyApplications
+    } = require('../controllers/applicationController');
+    
+    router.post('/', protect, checkRole('student'), applyForInternship);
+    router.get('/my-applications', protect, getMyApplications);
 
     // ✅ Approve or Reject an application (Only Companies/Admins)
     router.put("/:id/status", verifyToken, async (req, res) => {
