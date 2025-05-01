@@ -43,6 +43,7 @@ const adminRoutes = require("./routes/adminRoutes"); // Import Admin Routes
 const userRoutes = require("./routes/userRoutes");
 const progressRoutes = require("./routes/progressRoutes");
 
+
 // ✅ Use Routes
 app.use("/api/auth", authRoutes); // Authentication Routes
 app.use("/api/internships", internshipRoutes); // Internship Routes
@@ -53,6 +54,9 @@ app.use("/api/peo", peoRoutes);
 app.use("/api/admin", adminRoutes); // Base route for Admin APIs
 app.use("/api/users", userRoutes);
 app.use("/api/progress", progressRoutes);
+app.use("/api/mentor", require("./routes/mentorRoutes")); // Mentor Routes
+app.use("/api/student", require("./routes/studentRoutes")); // Student Routes
+
 app.use(require('./middlewares/errorHandler'));
 // Schedule daily progress updates
 cron.schedule("0 0 * * *", async () => {
