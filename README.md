@@ -41,19 +41,13 @@ To streamline the internship process for students, faculty, and administrators b
 - 📄 **Internship Applications**: Submit, view, and track applications
 - 🧮 **Progress Tracking**: Current stage, remarks, and last updated timestamp
 - 🏷️ **PO/PEO/SDG Mapping**: Associate learning outcomes with real internships
-- 🧠 **Filtering & Matching**: AI-based volunteer-NGO match (optional future scope)
 - 💡 **Responsive UI**: Mobile-friendly, clean dashboard design
 
 ---
 
-## 📽️ Demo Video
+## 📽️ Demo Video & 📸 Screenshots
 
-🎬 **[Watch the Demo on Google Drive](https://drive.google.com/drive/folders/1XJKZv99jeVvCSfmUW0McXiYxTDQTKjxE?usp=drive_link)**
-
-
-
-## 📸 Screenshots
-
+🎬 **[Watch the Demo and Screenshots on Google Drive](https://drive.google.com/drive/folders/1XJKZv99jeVvCSfmUW0McXiYxTDQTKjxE?usp=drive_link)**
 
 
 ## 🧪 How to Run the Project
